@@ -75,10 +75,20 @@ ul#main-nav {
 
 li.main-nav-item {
   float: left;
-  padding: 10px 13px;
+  padding: 12px 13px;
   background-color: #2F5109;
   margin-right: 10px;
-  font-size: 14px;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+li.main-nav-item.selected {
+  background-color: #fff;
+  border-bottom: 1px dotted #A4B278;
+}
+
+li.main-nav-item.selected a {
+  color: #335200;
 }
 
 a.main-nav-link {
