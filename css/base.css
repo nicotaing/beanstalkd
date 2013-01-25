@@ -37,6 +37,8 @@ header {
   height: 310px;
 }
 
+/* HEADER */
+
 header #inner-header {
   background: url('/img/header/header.png') no-repeat;
   background-size: 430px 310px;
@@ -63,36 +65,49 @@ h2.header-title {
   font-size: 32px;
 }
 
+/* NAV MENU */
+
 #nav {
   border-top: 2px solid #345109;
   background-color: #3B650D;
 }
 
-ul#main-nav {
-  margin-top: 8px;
+ul.nav-menu {
+  float: left;
+  margin: 8px 0 0 0;
+  padding: 0;
   list-style-type: none;
 }
 
-li.main-nav-item {
+li.nav-item {
   float: left;
-  padding: 12px 13px;
   background-color: #2F5109;
   margin-right: 10px;
   font-size: 15px;
   line-height: 18px;
 }
 
-li.main-nav-item.selected {
+li.nav-item.selected {
   background-color: #fff;
   border-bottom: 1px dotted #A4B278;
 }
 
-li.main-nav-item.selected a {
+li.nav-item.selected a {
   color: #335200;
 }
 
-a.main-nav-link {
+a.nav-link {
   text-decoration: none;
   color: #B8D872;
+  padding: 12px 13px;
+  display: inline-block;
+}
+
+ul#extra-nav {
+  float: right;
+}
+
+li.extra-nav-item.nav-item {
+  background-color: #547C21;
 }
 
