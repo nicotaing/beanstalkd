@@ -109,7 +109,7 @@ ul#extra-nav {
   float: right;
 }
 
-li.extra-nav-item.nav-item {
+a.extra-nav-link {
   background-color: #547C21;
 }
 
