@@ -81,26 +81,28 @@ ul.nav-menu {
 
 li.nav-item {
   float: left;
-  background-color: #2F5109;
   margin-right: 10px;
   font-size: 15px;
   line-height: 18px;
 }
 
-li.nav-item.selected {
-  background-color: #fff;
-  border-bottom: 1px dotted #A4B278;
-}
-
-li.nav-item.selected a {
-  color: #335200;
-}
-
 a.nav-link {
   text-decoration: none;
   color: #B8D872;
+  background-color: #2F5109;
   padding: 12px 13px;
   display: inline-block;
+}
+
+a.nav-link.selected {
+  background-color: #fff;
+  color: #335200;
+  border-bottom: 1px dotted #A4B278;
+}
+
+
+a.nav-link:hover {
+  color: #fff;
 }
 
 ul#extra-nav {
