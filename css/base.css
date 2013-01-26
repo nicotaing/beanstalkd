@@ -31,16 +31,41 @@
   padding: 0 10px;
 }
 
-header {
-  background: #67B200 url('/img/header/header_bg.png');
-  width: 100%;
-  height: 310px;
+body {
+  font-family: "museo-slab",serif;
+  color: #727272;
+}
+
+a, a:visited, a:hover {
+  color: #406701;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  border-bottom: 1px solid #DFDFDF;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 12px;
+  margin-bottom: 0;
 }
 
 /* HEADER */
 
+header {
+  background: #67B200 url('/beanstalkd/img/header/header_bg.png');
+  width: 100%;
+  height: 310px;
+}
+
 header #inner-header {
-  background: url('/img/header/header.png') no-repeat;
+  background: url('/beanstalkd/img/header/header.png') no-repeat;
   background-size: 430px 310px;
   height: 100%;
   color: #fff;
@@ -63,13 +88,33 @@ h1.header-title {
 h2.header-title {
   color: #B8D872;
   font-size: 32px;
+  text-align: left;
+  border-bottom: none;
+}
+
+a.get-bs {
+  text-transform: uppercase;
+  background-color: #E1721E;
+  border-bottom: 2px solid #E7CDB4;
+  padding: 18px 16px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  text-shadow: 0px 1px #333;
+}
+
+span.bs-name {
+  text-transform: lowercase;
+  font-family: 'europa', sans-serif;
+  font-size: 34px;
 }
 
 /* NAV MENU */
 
 #nav {
   border-top: 2px solid #345109;
-  background-color: #3B650D;
+  background-color: #3C6801;
 }
 
 ul.nav-menu {
@@ -86,10 +131,14 @@ li.nav-item {
   line-height: 18px;
 }
 
+li.nav-item:last-child {
+  margin-right: 0;
+}
+
 a.nav-link {
   text-decoration: none;
   color: #B8D872;
-  background-color: #2F5109;
+  background-color: #2F5401;
   padding: 12px 13px;
   display: inline-block;
   -webkit-transition: background-color 100ms linear;
@@ -110,12 +159,54 @@ a.nav-link.selected {
   border-bottom: 1px dotted #A4B278;
 }
 
-
 ul#extra-nav {
   float: right;
 }
 
 a.extra-nav-link {
-  background-color: #547C21;
+  background-color: #558018;
 }
+
+/* CONTENT */
+
+#content {
+  padding-top: 40px;
+}
+
+#top-content {
+  color: #3F4B17;
+}
+
+#intro {
+  float:left;
+  width: 600px;
+}
+
+#description {
+  font-size: 26px;
+  line-height: 40px;
+  margin-top: 0;
+}
+
+#history {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+#news {
+  float: right;
+}
+
+#news a.get-bs {
+  margin-bottom: 30px;
+}
+
+#news p {
+  margin-top: 4px;
+}
+
+a[href="news.html"] {
+  font-size: 11px;
+}
+
 

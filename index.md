@@ -3,20 +3,9 @@ layout: base
 title: About
 ---
 
-Beanstalk is a simple, fast work queue.
+## Stay tuned
 
-Its interface is generic, but was originally designed for reducing the latency
-of page views in high-volume web applications by running time-consuming tasks
-asynchronously.
-
-## News
-
-<div>
-  <a id='feed' href='http://feeds.feedburner.com/beanstalkd'><img
-    src='/beanstalkd/img/feed-icon.png' alt='Subscribe' /></a>
-</div>
-
-{% for post in site.posts limit:1 %}
+{% for post in site.posts limit:2 %}
 
 ### {{ post.date | date_to_long_string }}
 
@@ -26,7 +15,7 @@ asynchronously.
 
 [More news...](news.html)
 
-## Run It
+<!-- ## Run It
 
 First, run `beanstalkd` on one or more machines. There is no configuration
 file and only a handful of command-line options.
@@ -62,13 +51,6 @@ loop do
 end
 {% endhighlight %}
 
-## History
-
-Philotic, Inc. developed beanstalk to improve the response time for the
-[Causes on Facebook][cof] application (with over 9.5 million users). Beanstalk
-decreased the average response time for the most common pages to a tiny
-fraction of the original, significantly improving the user experience.
-
 ## Bugs
 
 Please report any bugs to [the mailing list][mailinglist].
@@ -77,9 +59,8 @@ Please report any bugs to [the mailing list][mailinglist].
 
 Many thanks to [memcached][memcached] for providing inspiration for simple
 protocol design and for the structure of the documentation. Not to mention a
-fantastic piece of software!
+fantastic piece of software! -->
 
-[cof]: http://apps.facebook.com/causes/
 [mailinglist]: http://groups.google.com/group/beanstalk-talk
 [memcached]: http://www.danga.com/memcached/
 [client libraries]: http://wiki.github.com/kr/beanstalkd/client-libraries

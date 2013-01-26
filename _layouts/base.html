@@ -2,8 +2,8 @@
   <head>
     <meta charset=utf-8>
     <title>{{ page.title }} &ndash; beanstalkd</title>
-    <link rel="stylesheet" href="/css/normalize.css" type="text/css">
-    <link rel="stylesheet" href="/css/base.css" type="text/css">
+    <link rel="stylesheet" href="/beanstalkd/css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="/beanstalkd/css/base.css" type="text/css">
     <link href="http://feeds.feedburner.com/beanstalkd" title="News for beanstalkd" rel="alternate" type="application/atom+xml">
     <script type="text/javascript" src="//use.typekit.net/cdk4dei.js"></script>
      <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -20,32 +20,22 @@
     </header>
 
     <div id="nav">
-      <div id="inner-nav" class="container cf">
-        <ul id="main-nav" class="cf nav-menu">
-          <li class="nav-item">
-            <a class="nav-link color: selected" href="javascript:void(0);">Start with beanstalkd</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0);">What's a work queue?</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0);">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0);">Contribute &amp; Help</a>
-          </li>
-        </ul>
-
-        <ul id="extra-nav" class="cf nav-menu">
-          <li class="nav-item">
-            <a class="extra-nav-link nav-link" href="javascript:void(0);">FAQ</a>
-          </li>
-          <li class="nav-item">
-            <a class="extra-nav-link nav-link" href="javascript:void(0);">Mailing List</a>
-          </li>
-        </ul>
-      </div>
+      {% include nav.html %}
     </div>
+
+    <div id="content" class="container">
+      <div id="top-content" class="cf">
+
+        <div id="intro">
+          {% include description.html %}
+        </div>
+
+        <div id="news">
+          <a class="get-bs" href="javascript:void(0)"> get <span class="bs-name">beanstalkd</span> </a>
+          {{ content }}
+        </div>
+      </div> <!-- top-content -->
+    </div> <!-- content -->
   </body>
 
 </html>
