@@ -11,12 +11,7 @@
 
   <body>
     <header>
-      <div id="inner-header" class="container">
-        <div id="header-content">
-          <h1 class="header-title">beanstalkd</h1>
-          <h2 class="header-title">The simple, fast work queue</h2>
-        </div>
-      </div>
+      {% include header.html %}
     </header>
 
     <div id="nav">
@@ -38,127 +33,18 @@
       </div> <!-- top-content -->
 
       <div id="usage" class="cf section-wrap">
-        <section class="grid-2-section grid-full">
-          <h2 class="grid-title">Run It</h2>
-          <p>
-            First, run beanstalkd on one or more machines.
-            There is no configuration file and only a handful of command-line options.
-          </p>
-
-          <pre><code>$ ./beanstalkd -l 10.0.1.5 -p 11300</code></pre>
-
-          <p>
-            This starts up beanstalkd listhing on address
-            10.0.1.5, port 11300. For more information on how to
-            run beanstalkd as a background service in production,
-            <a href="javascript:void(0);">see the adm directory</a>
-          </p>
-        </section>
-
-        <section class="grid-2-section grid-full">
-          <h2 class="grid-title">Use It</h2>
-          <p>Firt have one process put a job into the queue:</p>
-
-<pre><code># Connect to pool
-@beanstalk = Beaneater::Pool.new(['localhost:11300'])
-
-# Enqueue jobs to tube
-@tube = @beanstalk.tubes["my-tube"]
-@tube.put '{ "key" : "foo" }', :pri => 5</code></pre>
-
-          <p>Then start another process to take jobs out of the queue and run them:</p>
-
-<pre><code># Process jobs from tube
-while @tube.peek(:ready)
-  job = @tube.reserve
-  puts "job value is #{job.body["key"]}!"
-  job.delete
-end</code></pre>
-
-        </section>
+        {% include usage.html %}
       </div>  <!-- usage -->
 
-      <div id="defintion" class="section-wrap">
+      <div id="definition" class="section-wrap">
         <section class="grid-1-section grid-full">
           <h2 class="grid-title">What's a work queue</h2>
         </section>
-      </div>
+      </div> <!-- definition -->
 
       <div id="features" class="section-wrap">
-        <section class="grid-1-section grid-full">
-          <h2 class="grid-title">Features</h2>
-
-          <ul id="features-list" class="cf">
-            <li class="features-item cg">
-              <div class="features-icon features-parallelized"></div>
-              <h3 class="features-title">Parallelized</h3>
-
-              <p class="features-tagline">
-                Supports multiple work queues created on demand.
-              </p>
-
-              <a href="javascript:void(0);" class="features-example">see an example</a>
-            </li> <!-- parallelized -->
-
-            <li class="features-item cf">
-              <div class="features-icon features-fast-efficient"></div>
-              <h3 class="features-title">Fast &amp; Efficient</h3>
-
-              <p class="features-tagline">
-                Processes thousands of job per second without breaking a sweat
-              </p>
-
-              <a href="javascript:void(0);" class="features-example">see an example</a>
-            </li> <!-- fast-efficient -->
-
-            <li class="features-item cf">
-              <div class="features-icon features-safe-reliable"></div>
-              <h3 class="features-title">Safe &amp; Reliable</h3>
-
-              <p class="features-tagline">
-                Beanstalkd's reserve, work, delete
-                cycle ensures reliable processing,
-                even if the workers crash or get stuck.
-              </p>
-
-              <a href="javascript:void(0);" class="features-example">see an example</a>
-            </li> <!-- safe-reliable -->
-
-            <li class="features-item cf">
-              <div class="features-icon features-persistence"></div>
-              <h3 class="features-title">Persistence</h3>
-
-              <p class="features-tagline">
-                Process thousands of jobs per second without breaking a sweat
-              </p>
-
-              <a href="javascript:void(0);" class="features-example">see an example</a>
-            </li> <!-- persistence -->
-
-            <li class="features-item cf">
-              <div class="features-icon features-priorities"></div>
-              <h3 class="features-title">Priorities</h3>
-
-              <p class="features-tagline">
-                Specify priority so important jobs can be processed quickly
-              </p>
-
-              <a href="javascript:void(0);" class="features-example">see an example</a>
-            </li> <!-- priorities -->
-
-            <li class="features-item cf">
-              <div class="features-icon features-federation"></div>
-              <h3 class="features-title">Federation</h3>
-
-              <p class="features-tagline">
-                Horizontal scalability provided through federation by the client
-              </p>
-
-              <a href="javascript:void(0);" class="features-example">see an example</a>
-            </li> <!-- federation -->
-          </ul>
-        </section>
-      </div>
+        {% include features.html %}
+      </div> <!-- features -->
     </div> <!-- content -->
   </body>
 
