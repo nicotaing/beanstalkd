@@ -48,6 +48,7 @@ h2 {
   padding-bottom: 5px;
   margin-bottom: 20px;
   text-transform: uppercase;
+  color: #3D4A15;
 }
 
 h3 {
@@ -87,9 +88,12 @@ h1.header-title {
 
 h2.header-title {
   color: #B8D872;
-  font-size: 32px;
+  font-size: 28px;
   text-align: left;
   border-bottom: none;
+  text-transform: none;
+  padding: 0;
+  margin: 10px 0 0;
 }
 
 a.get-bs {
@@ -173,40 +177,54 @@ a.extra-nav-link {
   padding-top: 40px;
 }
 
+/* TOP CONTENT */
+
 #top-content {
   color: #3F4B17;
 }
 
-#intro {
+#top-content .p-hack {
+  margin: 0;
+  display: inline;
+}
+
+#description {
   float:left;
   width: 600px;
 }
 
-#description {
+#description p:first-child {
   font-size: 26px;
   line-height: 40px;
   margin-top: 0;
 }
 
-#history {
+#description p:last-child {
   font-size: 16px;
   line-height: 28px;
 }
 
 #news {
-  float: right;
-}
-
-#news a.get-bs {
-  margin-bottom: 30px;
+  float: left;
+  margin-left: 100px;
 }
 
 #news p {
   margin-top: 4px;
 }
 
-a[href="news.html"] {
+a.more-news{
   font-size: 11px;
 }
 
+/* USAGE */
 
+.usage {
+  width: 440px;
+  float: left;
+  margin-right: 60px;
+}
+
+.usage:last-child {
+  margin-right: 0;
+}
