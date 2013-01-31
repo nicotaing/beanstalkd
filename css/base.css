@@ -36,6 +36,17 @@ body {
   color: #727272;
 }
 
+section p {
+  line-height: 27px;
+}
+
+code {
+  margin: 15px 0;
+  background-color: #F4F4E8;
+  padding: 18px 12px;
+  display: block;
+}
+
 a, a:visited, a:hover {
   color: #406701;
 }
@@ -55,6 +66,10 @@ h3 {
   font-weight: normal;
   font-size: 12px;
   margin-bottom: 0;
+}
+
+div.section-wrap {
+  margin-bottom: 20px;
 }
 
 /* HEADER */
@@ -213,18 +228,31 @@ a.extra-nav-link {
   margin-top: 4px;
 }
 
+#news a.get-bs {
+  margin-bottom: 40px;
+}
+
 a.more-news{
   font-size: 11px;
 }
 
 /* USAGE */
 
-.usage {
+section.grid-full {
   width: 440px;
+}
+
+section.grid-2-items {
   float: left;
   margin-right: 60px;
 }
 
-.usage:last-child {
+section.grid-2-items:last-child {
   margin-right: 0;
+}
+
+/* DEFINITION */
+
+section.grid-1-item {
+  margin: 0 auto;
 }
