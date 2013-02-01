@@ -342,3 +342,20 @@ a.features-example {
   font-size: 11px;
   text-transform: uppercase;
 }
+
+a.features-example:hover, a.features-example:visited {
+  color: #406701;
+}
+
+/* FOOTER */
+footer.container {
+  padding-bottom: 30px;
+  color: #989889;
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+footer a {
+  color: #989889;
+  font-weight: bold;
+}
