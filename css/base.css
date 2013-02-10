@@ -364,7 +364,7 @@ ul#companies-using-list {
 
 li.companies-using-item {
   float: left;
-  margin: 0 10px;
+  margin: 5px 10px;
   width: 362px;
   text-align: center;
 }
