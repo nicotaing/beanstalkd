@@ -347,9 +347,30 @@ a.features-example:hover, a.features-example:visited {
   color: #406701;
 }
 
+/* COMPANIES USING */
+
+ul#companies-using-list {
+  list-style-type: none;
+  margin: 40px auto;
+  padding: 0;
+  width: 765px;
+}
+
+li.companies-using-item {
+  float: left;
+  margin: 0 10px;
+  width: 362px;
+  text-align: center;
+}
+
+img.companies-using-logo {
+  height: 70px;
+}
+
 /* FOOTER */
+
 footer.container {
-  padding-bottom: 30px;
+  padding: 15px 0 30px;
   color: #989889;
   font-size: 12px;
   line-height: 1.5em;
