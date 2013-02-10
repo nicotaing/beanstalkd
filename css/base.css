@@ -270,6 +270,12 @@ section.grid-1-section {
   margin: 0 auto;
 }
 
+img#definition-schema {
+  width: 759px;
+  display: block;
+  margin: 45px auto;
+}
+
 /* FEATURES */
 
 ul#features-list {
