@@ -6,6 +6,8 @@
 :: Shared Styles
 :: Header
 :: Nav
+:: Content
+:: Top Content
 */
 
 
@@ -45,9 +47,19 @@ body {
   color: #727272;
 }
 
+p {
+	font-size: 18px;
+}
+
 h1, h2, h3 {
 	color: white;
 	/*font-family: 'europa', sans-serif;*/
+}
+
+a, a:visited, a:hover {
+  color: #406701;
+  display:inline-block;
+  border-bottom: 1px dotted #406701;
 }
 
 /* -----------------------------------------
@@ -211,3 +223,34 @@ li.nav-item:last-child {
 	}
 }
 
+/* -----------------------------------------
+   Content
+----------------------------------------- */
+
+#content {
+  padding-top: 40px;
+}
+
+/* -----------------------------------------
+   Top Content
+----------------------------------------- */
+
+#top-content {
+  color: #3F4B17;
+}
+
+#description {
+  float:left;
+  width: 600px;
+}
+
+#description p:first-child {
+  font-size: 28px;
+  line-height: 40px;
+  margin-top: 0;
+}
+
+#description p:last-child {
+  font-size: 20px;
+  line-height: 28px;
+}
