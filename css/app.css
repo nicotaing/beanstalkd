@@ -104,7 +104,7 @@ h2.header-title {
   font-family: "museo-slab",serif;
 }
 
-/* Small screens */
+/* Medium screens */
 @media only screen and (max-width: 940px) {
 
 	header {
@@ -230,6 +230,14 @@ li.nav-item:last-child {
   padding-top: 40px;
 }
 
+/* Medium screens */
+@media only screen and (max-width: 967px) {
+	#content {
+	  padding-top: 20px;
+	}
+}
+
+
 /* -----------------------------------------
    Top Content
 ----------------------------------------- */
@@ -245,11 +253,25 @@ li.nav-item:last-child {
 
 #description p:first-child {
   font-size: 28px;
-  line-height: 40px;
+  line-height: 1.5em;
   margin-top: 0;
 }
 
 #description p:last-child {
   font-size: 20px;
-  line-height: 28px;
+  line-height: 1.5em;
+}
+
+/* Medium screens */
+@media only screen and (max-width: 967px) {
+	#description p:first-child {
+	  font-size: 20px;
+	  line-height: 1.3em;
+  	margin-top: 0;
+	}
+
+	#description p:last-child {
+	  font-size: 15px;
+	  line-height: 1.3em;
+	}
 }
