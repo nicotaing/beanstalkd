@@ -171,7 +171,7 @@ li.nav-item:last-child {
   transition: background-color 100ms linear;
 }
 
-.top-bar ul > li a.nav-link:hover {
+.top-bar ul > li.nav-item a.nav-link:hover {
   color: #fff;
   background-color: #67B200;
 }
