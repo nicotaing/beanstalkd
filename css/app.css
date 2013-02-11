@@ -105,7 +105,7 @@ h2.header-title {
 }
 
 /* Small screens */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 940px) {
 
 	header {
 		height: 9em;
@@ -186,9 +186,8 @@ li.nav-item:last-child {
   background-color: #558018;
 }
 
-/* Small screens */
-@media only screen and (max-width: 767px) {
-
+/* Medium screens */
+@media only screen and (max-width: 940px) {
 	#nav .twelve.columns {
 		padding: 0;
 	}
@@ -211,14 +210,14 @@ li.nav-item:last-child {
 	}
 
 	.top-bar ul > li a.nav-link {
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
-  -ms-transition: none;
-  transition: none;
-}
+	  -webkit-transition: none;
+	  -moz-transition: none;
+	  -o-transition: none;
+	  -ms-transition: none;
+	  transition: none;
+  }
 
-.top-bar ul > li a.nav-link.right-nav-link {
+	.top-bar ul > li a.nav-link.right-nav-link {
 		background-color: #2F5401;
 	}
 }
