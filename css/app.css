@@ -362,5 +362,9 @@ a.more-news{
 	#news a.get-bs {
 		margin: 0 auto;
 	}
+
+	a.more-news{
+  	font-size: 15px;
+	}
 }
 
