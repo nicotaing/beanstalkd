@@ -5,6 +5,7 @@
 -----------------------------------------------------
 :: Shared Styles
 :: Header
+:: Nav
 */
 
 
@@ -39,10 +40,15 @@
     *zoom: 1;
 }
 
-h1, h2 {
-	color: white;
+body {
+  font-family: "europa",serif;
+  color: #727272;
 }
 
+h1, h2, h3 {
+	color: white;
+	/*font-family: 'europa', sans-serif;*/
+}
 
 /* -----------------------------------------
    Header
@@ -110,7 +116,93 @@ h2.header-title {
 	}
 }
 
+/* -----------------------------------------
+   Nav
+----------------------------------------- */
 
+#nav {
+  border-top: 2px solid #345109;
+  background-color: #3C6801;
+}
 
+nav.top-bar {
+	background: none;
+	margin: 0;
+	padding: 10px 0 0;
+}
 
+ul.top-bar-title {
+	display: none;
+}
+
+nav.top-bar > section li {
+  margin-right: 10px;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+li.nav-item:last-child {
+  margin-right: 0;
+}
+
+.top-bar ul > li a.nav-link {
+  text-decoration: none;
+  color: #B8D872;
+  background-color: #2F5401;
+  padding: 14px 13px 10px;
+  /*display: inline-block;*/
+  font-size: 16px;
+  line-height: 1em;
+  -webkit-transition: background-color 100ms linear;
+  -moz-transition: background-color 100ms linear;
+  -o-transition: background-color 100ms linear;
+  -ms-transition: background-color 100ms linear;
+  transition: background-color 100ms linear;
+}
+
+.top-bar ul > li a.nav-link:hover {
+  color: #fff;
+  background-color: #67B200;
+}
+
+.top-bar ul > li a.nav-link.right-nav-link {
+  background-color: #558018;
+}
+
+/* Small screens */
+@media only screen and (max-width: 767px) {
+
+	#nav .twelve.columns {
+		padding: 0;
+	}
+
+	nav.top-bar {
+		padding: 0;
+	}
+
+	ul.top-bar-title {
+		display: inline;
+	}
+
+	nav.top-bar > section li {
+  	margin-right: 0;
+	}
+
+	nav.top-bar ul > li.name h1 {
+		font-size: 20px;
+		line-height: 42px;
+	}
+
+	.top-bar ul > li a.nav-link {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+}
+
+.top-bar ul > li a.nav-link.right-nav-link {
+		background-color: #2F5401;
+	}
+}
 
