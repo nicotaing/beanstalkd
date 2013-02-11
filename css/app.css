@@ -150,7 +150,6 @@ li.nav-item:last-child {
   color: #B8D872;
   background-color: #2F5401;
   padding: 14px 13px 10px;
-  /*display: inline-block;*/
   font-size: 16px;
   line-height: 1em;
   -webkit-transition: background-color 100ms linear;
@@ -163,6 +162,12 @@ li.nav-item:last-child {
 .top-bar ul > li a.nav-link:hover {
   color: #fff;
   background-color: #67B200;
+}
+
+.top-bar ul > li a.nav-link.selected {
+  background-color: #fff;
+  color: #335200;
+  border-bottom: 1px dotted #A4B278;
 }
 
 .top-bar ul > li a.nav-link.right-nav-link {
