@@ -387,5 +387,6 @@ a.more-news{
 ----------------------------------------- */
 
 #definition img {
-	margin-bottom: 1.5em;
+	margin: 0 auto 2em;
+  display: block;
 }
