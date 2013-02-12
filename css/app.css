@@ -390,3 +390,91 @@ a.more-news{
 	margin: 0 auto 2em;
   display: block;
 }
+
+/* -----------------------------------------
+   Features
+----------------------------------------- */
+
+div#features {
+  text-align: center;
+}
+
+div.features-item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+div.features-icon {
+  width: 160px;
+  height: 160px;
+  float: left;
+  border-right: 2px solid #DFDFD1;
+  margin-right: 55px;
+  background: no-repeat 50% #F0F0E2;
+  background-size: 160px 160px;
+}
+
+div.features-parallelized {
+  background-image: url('/beanstalkd/img/features/parallelized.png');
+}
+
+div.features-fast-efficient {
+  background-image: url('/beanstalkd/img/features/fast-efficient.png');
+}
+
+div.features-icon.features-safe-reliable {
+  background-image: url('/beanstalkd/img/features/safe-reliable.png');
+}
+
+div.features-icon.features-persistence {
+  background-image: url('/beanstalkd/img/features/persistence.png');
+}
+
+div.features-icon.features-priorities {
+  background-image: url('/beanstalkd/img/features/priorities.png');
+}
+
+div.features-icon.features-federation {
+  background-image: url('/beanstalkd/img/features/federation.png');
+}
+
+h3.features-title {
+  color: #80B422;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 35px 0 8px 0;
+  font-weight: 700;
+}
+
+p.features-tagline {
+  margin: 0 0 8px;
+  font-size: 14px;
+  line-height: 1em;
+}
+
+a.features-example {
+  display: block;
+  color: #989889;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+a.features-example:hover, a.features-example:visited {
+  color: #406701;
+}
+
+/* Medium screens */
+@media only screen and (max-width: 967px) {
+  div.features-icon {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    background-size: 100px 100px;
+  }
+
+  h3.features-title {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+}
+
