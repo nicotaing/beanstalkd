@@ -10,6 +10,7 @@
 :: Top Content
 :: Features
 :: Companies Using
+:: Footer
 */
 
 
@@ -499,3 +500,18 @@ img.companies-using-logo {
   }
 }
 
+/* -----------------------------------------
+   Companies using
+----------------------------------------- */
+
+footer {
+  padding: 15px 0 30px;
+  color: #989889;
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+footer a {
+  color: #989889;
+  font-weight: bold;
+}
