@@ -8,6 +8,8 @@
 :: Nav
 :: Content
 :: Top Content
+:: Features
+:: Companies Using
 */
 
 
@@ -475,6 +477,25 @@ a.features-example:hover, a.features-example:visited {
   h3.features-title {
     font-size: 16px;
     margin: 8px 0;
+  }
+}
+
+/* -----------------------------------------
+   Companies using
+----------------------------------------- */
+
+#companies-using {
+  text-align: center;
+}
+
+img.companies-using-logo {
+  height: 70px
+}
+
+/* Small screens */
+@media only screen and (max-width: 767px) {
+  img.companies-using-logo {
+    height: auto
   }
 }
 
